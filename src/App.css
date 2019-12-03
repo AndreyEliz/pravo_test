@@ -1,22 +1,50 @@
-.App {
+@keyframes btn_hover {
+  from {background-color: #77f;}
+  to {background-color: #55f;}
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+button {
+  background-color: #77f;
+  border: 1px solid #aaf;
+  border-radius: 0;
+  padding: 10px;
+  margin: 5px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+button:hover {
+  background-color: #55f;
+  animation-name: btn_hover;
+  animation-duration: .5s;
+}
+
+input {
+  border: 1px solid #aaf;
+  margin: 5px;
+  padding: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.content {
+  display: flex;
+  flex-direction: column;
+  max-width: 1024px;
+  min-width: 768px;
 }
